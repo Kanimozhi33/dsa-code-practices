@@ -14,8 +14,8 @@ def findLargestMinDistance(boards:list, k:int):
                 add_up = num
                 if sub_array > k:
                     break
-                else:
-                    add_up+=num
+            else:
+                add_up+=num
         if sub_array > k:
             left = mid+1
         else:
@@ -23,4 +23,4 @@ def findLargestMinDistance(boards:list, k:int):
     return left
 
 
-# not completed
+# completed
