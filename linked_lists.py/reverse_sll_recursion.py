@@ -1,4 +1,4 @@
-def reverseListRecursive(self, head: Optional[ListNode]) -> Optional[ListNode]:
+def reverseListRecursive(self, head):
     if not head or not head.next:
         return head
     reversed_head = self.reverseListRecursive(head.next)  # Reverse the rest of the list
