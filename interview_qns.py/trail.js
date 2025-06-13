@@ -28,6 +28,26 @@
 // console.log(sumOfDivisors(5)); // Output: 6
 // console.log(sumOfDivisors(12)); // Output: 28 (divisors: 1, 2, 3, 4, 6, 12)
 
-let x = 12;
+// let x = 12;
+// let y = (typeof x === typeof 12)
+// console.log(y)
 
-console.log(typeof x)
+
+
+
+
+const [task, setTask] = useState([])
+
+const TaskManager = () =>{
+    return (
+        <div><input id="tasks">
+        </input>
+        <button onClick={task = task.push()}>ok</button></div>
+        
+    )
+}
+
+
+
+
+
