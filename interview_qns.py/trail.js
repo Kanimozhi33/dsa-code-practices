@@ -36,18 +36,29 @@
 
 
 
-const [task, setTask] = useState([])
+// const [task, setTask] = useState([])
 
-const TaskManager = () =>{
-    return (
-        <div><input id="tasks">
-        </input>
-        <button onClick={task = task.push()}>ok</button></div>
+// const TaskManager = () =>{
+//     return (
+//         <div><input id="tasks">
+//         </input>
+//         <button onClick={task = task.push()}>ok</button></div>
         
-    )
+//     )
+// }
+
+
+function removeDuplicates(nums){
+    if (!nums) return 0 
+    let sortedNums = nums.sorted();
+    let k =1;
+    for (let i =1; i< nums.length; i++){
+        if (sortedNums[i] != sortedNums[i-1]){
+            sortedNums[k] = sortedNums[i];
+            k +=1;
+        }
+    }
+    return sortedNums.slice(0,k)
 }
-
-
-
 
 

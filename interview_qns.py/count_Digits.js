@@ -5,7 +5,7 @@ var countDigits = function (num){
     let temp = num;
     while (temp >0) {
         count +=1 ;
-        temp =Math.floor(temp/10);
+        temp = Math.floor(temp/10);
     }
 
     return count;
