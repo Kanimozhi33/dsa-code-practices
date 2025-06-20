@@ -31,3 +31,17 @@ code practices of strivers dsa
 - Prepare for aptitude tests and technical rounds with mock interviews.
 
 If you want, I can create a weekly roadmap tailored to your current level and goals. Or we can start with a mini project right now—your call, coach! 🧑‍💻🔥
+
+
+
+Mounting
+Mounting is the phase when a component is inserted into the DOM for the first time. It includes:
+- Creating the component instance
+- Calling lifecycle methods like constructor, render, and componentDidMount
+- Actually placing the component’s output into the DOM
+Think of it as React saying, “Hey, this component is new—let’s build and display it.”
+🔁 Rendering
+Rendering is the process of generating the virtual DOM from your component’s JSX. It happens:
+- During the initial mount
+- Every time props or state change (i.e., during updates)
+So rendering can happen multiple times, but mounting happens only once per component instance.
