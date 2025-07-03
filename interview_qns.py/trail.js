@@ -48,17 +48,31 @@
 // }
 
 
-function removeDuplicates(nums){
-    if (!nums) return 0 
-    let sortedNums = nums.sorted();
-    let k =1;
-    for (let i =1; i< nums.length; i++){
-        if (sortedNums[i] != sortedNums[i-1]){
-            sortedNums[k] = sortedNums[i];
-            k +=1;
-        }
+// function removeDuplicates(nums){
+//     if (!nums) return 0 
+//     let sortedNums = nums.sorted();
+//     let k =1;
+//     for (let i =1; i< nums.length; i++){
+//         if (sortedNums[i] != sortedNums[i-1]){
+//             sortedNums[k] = sortedNums[i];
+//             k +=1;
+//         }
+//     }
+//     return sortedNums.slice(0,k)
+// }
+
+
+function twoSum(nums, target) {
+  const map = {};
+  for (let i = 0; i < nums.length; i++) {
+    const complement = target - nums[i];
+    if (map.hasOwnProperty(complement)) {
+      return [map[complement], i];
     }
-    return sortedNums.slice(0,k)
+    map[nums[i]] = i;
+  }
+  return [];
 }
 
 
+ans([1,2,3,4,5,6,7,8,1],3)
