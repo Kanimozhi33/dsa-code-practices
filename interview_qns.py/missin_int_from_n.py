@@ -4,3 +4,5 @@ def missing_num(arr):
     total = n*(n+1)//2
     actual = sum(arr)
     return total-actual
+
+    
