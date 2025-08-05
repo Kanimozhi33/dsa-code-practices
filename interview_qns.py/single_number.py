@@ -1,5 +1,5 @@
 class Solution:
-    def singleNumber(self, nums: List[int]) -> int:
+    def singleNumber(self, nums):
         count_dict ={}
         for element in nums:
             if element in count_dict:
@@ -9,3 +9,4 @@ class Solution:
         for keys,values in count_dict.items():
             if values == 1:
                 return keys
+            
