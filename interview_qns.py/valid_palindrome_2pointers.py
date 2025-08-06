@@ -1,5 +1,5 @@
 class Solution:
-    def isPalindrome(self, s: str) -> bool:
+    def isPalindrome(self, s):
         removed = re.sub(r'[^a-zA-Z0-9]', '', s).lower()
         reversed = removed[::-1]
         if removed == reversed:
