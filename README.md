@@ -30,7 +30,7 @@ code practices of strivers dsa
 - Practice behavioral questions and project explanations.
 - Prepare for aptitude tests and technical rounds with mock interviews.
 
-If you want, I can create a weekly roadmap tailored to your current level and goals. Or we can start with a mini project right now—your call, coach! 🧑‍💻🔥
+
 
 
 
